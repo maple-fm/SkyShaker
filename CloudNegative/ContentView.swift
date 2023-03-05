@@ -38,7 +38,7 @@ struct ContentView: View {
 
                     Spacer()
                     TextField("不満", text: $text)
-                        .background(.red)
+                        .background(Color(UIColor(named: "inputColor")!))
                         .offset(x: 0, y:350)
                 }
             }

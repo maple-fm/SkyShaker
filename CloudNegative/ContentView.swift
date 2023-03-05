@@ -38,8 +38,13 @@ struct ContentView: View {
 
                     Spacer()
                     TextField("不満", text: $text)
+                        .padding(10)
                         .background(Color(UIColor(named: "inputColor")!))
+                        .cornerRadius(10)
+                        .padding(20)
+                        .frame(width: 350, height: 50)
                         .offset(x: 0, y:350)
+
                 }
             }
 

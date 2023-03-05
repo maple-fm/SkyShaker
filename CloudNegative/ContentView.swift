@@ -16,6 +16,11 @@ struct ContentView: View {
         ZStack {
             Color(UIColor(named: "Sky")!)
                 .ignoresSafeArea()
+
+            Image("sun")
+                .resizable()
+                .frame(width: 200, height: 200)
+                .offset(x: -100, y:-300)
             VStack {
                 ZStack {
 
@@ -28,7 +33,7 @@ struct ContentView: View {
                             Text("Cloud")
                         }
                         .offset(x: CGFloat.random(in: -150..<cloudOffset), y: CGFloat.random(in: -100 ..< 5)*CGFloat.random(in: 0 ..< 5))
-                        .animation(Animation.linear(duration: Double.random(in: 11..<12)).repeatForever(autoreverses: true))
+                        .animation(Animation.linear(duration: Double.random(in: 14..<15)).repeatForever(autoreverses: true))
                     }
 
                     Spacer()

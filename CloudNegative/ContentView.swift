@@ -33,8 +33,8 @@ struct ContentView: View {
                             Text("\(negative)")
                                 .frame(width: 180, height: 90)
                         }
-                        .offset(x: CGFloat.random(in: -150..<cloudOffset), y: CGFloat.random(in: -100 ..< 5)*CGFloat.random(in: 0 ..< 5))
-                        .animation(Animation.linear(duration: Double.random(in: 14..<15)).repeatForever(autoreverses: true))
+                        .offset(x: CGFloat.random(in: -200..<cloudOffset), y: CGFloat(Int.random(in: -100 ..< 50))*CGFloat(Int.random(in: 0 ..< 5)))
+                        .animation(.linear(duration: Double.random(in: 20..<21)).repeatForever(autoreverses: true))
                     }
 
                     Spacer()

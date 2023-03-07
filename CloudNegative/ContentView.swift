@@ -37,13 +37,30 @@ struct ContentView: View {
                     }
 
                     Spacer()
-                    TextField("不満", text: $text)
-                        .padding(10)
-                        .background(Color(UIColor(named: "inputColor")!))
-                        .cornerRadius(10)
-                        .padding(20)
-                        .frame(width: 350, height: 50)
-                        .offset(x: 0, y:350)
+                    HStack(alignment: .center) {
+                        Spacer()
+                        TextField("不満", text: $viewModel.text)
+                            .padding(10)
+                            .background(Color(UIColor(named: "inputColor")!))
+                            .cornerRadius(10)
+                            .padding(30)
+                            .padding(.leading, 20)
+                            .frame(width: 370, height: 50)
+                            .offset(x: 0, y:350)
+
+                        Button(action: {
+                            viewModel.save()
+                        }) {
+                            Image("submit")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                        }
+                        .offset(x: -80, y: 350)
+
+
+                    }
+
+
 
                 }
             }

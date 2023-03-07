@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State var text: String = ""
+    @StateObject private var viewModel = TextViewModel()
     @State private var cloudOffset: CGFloat = UIScreen.main.bounds.width
 
     var body: some View {
@@ -24,13 +24,14 @@ struct ContentView: View {
             VStack {
                 ZStack {
 
-                    ForEach(0..<10) { index in
+                    ForEach(viewModel.negatives, id: \.self) { negative in
                         ZStack {
                             Image("cloud")
                                 .resizable()
-                                .frame(width: 260, height: 100)
+                                .frame(width: 260, height: 180)
                                 .foregroundColor(.blue)
-                            Text("Cloud")
+                            Text("\(negative)")
+                                .frame(width: 180, height: 90)
                         }
                         .offset(x: CGFloat.random(in: -150..<cloudOffset), y: CGFloat.random(in: -100 ..< 5)*CGFloat.random(in: 0 ..< 5))
                         .animation(Animation.linear(duration: Double.random(in: 14..<15)).repeatForever(autoreverses: true))
@@ -66,7 +67,7 @@ struct ContentView: View {
             }
 
             .onAppear {
-                self.cloudOffset = 100
+                self.cloudOffset = 200
             }
             .padding()
         }

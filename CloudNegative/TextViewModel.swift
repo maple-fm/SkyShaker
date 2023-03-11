@@ -34,4 +34,8 @@ class TextViewModel: ObservableObject {
         userDefaults.set(negatives, forKey: "negatives")
         text = ""
     }
+
+    func textValidated(_ count: Int) -> Bool {
+        count < 6
+    }
 }

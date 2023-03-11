@@ -28,19 +28,45 @@ struct ContentView: View {
                         ZStack {
                             Image("cloud")
                                 .resizable()
-                                .frame(width: 260, height: 180)
-                                .foregroundColor(.blue)
-                            Text("\(negative)")
-                                .frame(width: 180, height: 90)
+                                .frame(
+                                    width: { () -> CGFloat in
+                                        if viewModel.textValidated(negative.count) {
+                                            return 100
+                                        } else if negative.count > 20 {
+                                            return CGFloat(negative.count) * 10
+                                        } else {
+                                            return CGFloat(negative.count) * 25
+                                        }
+                                    }(),
+                                   height: { () -> CGFloat in
+                                           if viewModel.textValidated(negative.count) {
+                                               return 80
+                                           } else if negative.count > 20 {
+                                               return CGFloat(negative.count) * 8
+                                           } else {
+                                               return CGFloat(negative.count) * 10
+                                           }
+                                       }())
+                            Text(negative)
+                                .frame(width: { () -> CGFloat in
+                                    if viewModel.textValidated(negative.count) {
+                                        return 80
+                                    } else if negative.count > 20 {
+                                        return CGFloat(negative.count) * 5
+                                    } else {
+                                        return CGFloat(negative.count) * 10
+                                    }
+                                }())
+
                         }
                         .offset(x: CGFloat.random(in: -200..<cloudOffset), y: CGFloat(Int.random(in: -100 ..< 50))*CGFloat(Int.random(in: 0 ..< 5)))
                         .animation(.linear(duration: Double.random(in: 20..<21)).repeatForever(autoreverses: true))
                     }
 
                     Spacer()
-                    HStack(alignment: .center) {
-                        Spacer()
+                    HStack {
                         TextField("不満", text: $viewModel.text)
+                            .padding(.trailing, 35)
                             .padding(10)
                             .background(Color(UIColor(named: "inputColor")!))
                             .cornerRadius(10)
@@ -57,8 +83,6 @@ struct ContentView: View {
                                 .frame(width: 30, height: 30)
                         }
                         .offset(x: -80, y: 350)
-
-
                     }
 
 

@@ -11,7 +11,7 @@ struct ContentView: View {
 
     @StateObject private var viewModel = TextViewModel()
     @State private var cloudOffset: CGFloat = UIScreen.main.bounds.width
-    @State var size: CGFloat = 0
+    @State var opacity: CGFloat = 0
 
     var body: some View {
         ZStack {
@@ -26,8 +26,8 @@ struct ContentView: View {
                 ZStack {
 
                     ForEach(viewModel.negatives, id: \.self) { negative in
-                        ZStack {
-                            if self.size < 65 {
+                        if self.opacity < 100 {
+                            ZStack {
                                 Image("cloud")
                                     .resizable()
                                     .frame(
@@ -61,10 +61,11 @@ struct ContentView: View {
                                             }
                                         }())
                             }
+                            .offset(x: CGFloat.random(in: -cloudOffset..<cloudOffset), y: CGFloat(Int.random(in: -100 ..< 50))*CGFloat(Int.random(in: 0 ..< 5)))
+                            .animation(.linear(duration: Double.random(in: 20..<21)).repeatForever(autoreverses: true))
+                            .opacity(Double(1-opacity/100))
                         }
-                        .offset(x: CGFloat.random(in: -cloudOffset..<cloudOffset), y: CGFloat(Int.random(in: -100 ..< 50))*CGFloat(Int.random(in: 0 ..< 5)))
-                        .animation(.linear(duration: Double.random(in: 20..<21)).repeatForever(autoreverses: true))
-                        .opacity(Double(1-(size/100)))
+
                     }
 
                     Spacer()
@@ -93,14 +94,13 @@ struct ContentView: View {
 
                 }
             }
-
             .onAppear {
                 self.cloudOffset = 200
             }
             .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
                 print("シェイクしたよ")
-                size += 2
-                print(size)
+                opacity += 2
+                print(opacity)
             }
         }
 

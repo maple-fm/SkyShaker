@@ -11,6 +11,7 @@ struct ContentView: View {
 
     @StateObject private var viewModel = TextViewModel()
     @State private var cloudOffset: CGFloat = UIScreen.main.bounds.width
+    @State var size: CGFloat = 0
 
     var body: some View {
         ZStack {
@@ -26,41 +27,44 @@ struct ContentView: View {
 
                     ForEach(viewModel.negatives, id: \.self) { negative in
                         ZStack {
-                            Image("cloud")
-                                .resizable()
-                                .frame(
-                                    width: { () -> CGFloat in
-                                        if viewModel.textValidated(negative.count) {
-                                            return 100
-                                        } else if negative.count > 20 {
-                                            return CGFloat(negative.count) * 10
-                                        } else {
-                                            return CGFloat(negative.count) * 25
-                                        }
-                                    }(),
-                                   height: { () -> CGFloat in
-                                           if viewModel.textValidated(negative.count) {
-                                               return 80
-                                           } else if negative.count > 20 {
-                                               return CGFloat(negative.count) * 8
-                                           } else {
-                                               return CGFloat(negative.count) * 10
-                                           }
-                                       }())
-                            Text(negative)
-                                .frame(width: { () -> CGFloat in
-                                    if viewModel.textValidated(negative.count) {
-                                        return 80
-                                    } else if negative.count > 20 {
-                                        return CGFloat(negative.count) * 5
-                                    } else {
-                                        return CGFloat(negative.count) * 10
-                                    }
-                                }())
+                            if self.size < 65 {
+                                Image("cloud")
+                                    .resizable()
+                                    .frame(
+                                        width: { () -> CGFloat in
+                                            if viewModel.textValidated(negative.count) {
+                                                return 100
+                                            } else if negative.count > 20 {
+                                                return CGFloat(negative.count) * 10
+                                            } else {
+                                                return CGFloat(negative.count) * 25
+                                            }
+                                        }(),
+                                       height: { () -> CGFloat in
+                                               if viewModel.textValidated(negative.count) {
+                                                   return 80
+                                               } else if negative.count > 20 {
+                                                   return CGFloat(negative.count) * 6
+                                               } else {
+                                                   return CGFloat(negative.count) * 10
+                                               }
+                                           }())
 
+                                    Text(negative)
+                                        .frame(width: { () -> CGFloat in
+                                            if viewModel.textValidated(negative.count) {
+                                                return 80
+                                            } else if negative.count > 20 {
+                                                return CGFloat(negative.count) * 5
+                                            } else {
+                                                return CGFloat(negative.count) * 10
+                                            }
+                                        }())
+                            }
                         }
-                        .offset(x: CGFloat.random(in: -200..<cloudOffset), y: CGFloat(Int.random(in: -100 ..< 50))*CGFloat(Int.random(in: 0 ..< 5)))
+                        .offset(x: CGFloat.random(in: -cloudOffset..<cloudOffset), y: CGFloat(Int.random(in: -100 ..< 50))*CGFloat(Int.random(in: 0 ..< 5)))
                         .animation(.linear(duration: Double.random(in: 20..<21)).repeatForever(autoreverses: true))
+                        .opacity(Double(1-(size/100)))
                     }
 
                     Spacer()
@@ -93,7 +97,11 @@ struct ContentView: View {
             .onAppear {
                 self.cloudOffset = 200
             }
-            .padding()
+            .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
+                print("シェイクしたよ")
+                size += 2
+                print(size)
+            }
         }
 
     }
@@ -102,5 +110,16 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+extension NSNotification.Name {
+    public static let deviceDidShakeNotification = NSNotification.Name("DeviceDidShakeNotification")
+}
+
+extension UIWindow {
+    open override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        super.motionEnded(motion, with: event)
+        NotificationCenter.default.post(name: .deviceDidShakeNotification, object: event)
     }
 }

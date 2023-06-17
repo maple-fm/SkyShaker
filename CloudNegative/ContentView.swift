@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 
+    @FetchRequest(sortDescriptors: []) var clouds: FetchedResults<Cloud>
     @StateObject private var viewModel = TextViewModel()
     @State private var cloudOffset: CGFloat = UIScreen.main.bounds.width
     @State var opacity: CGFloat = 0
@@ -22,9 +23,9 @@ struct ContentView: View {
                 .resizable()
                 .frame(width: 200, height: 200)
                 .offset(x: -100, y:-300)
+
             VStack {
                 ZStack {
-
                     ForEach(viewModel.negatives, id: \.self) { negative in
                         if self.opacity < 100 {
                             ZStack {

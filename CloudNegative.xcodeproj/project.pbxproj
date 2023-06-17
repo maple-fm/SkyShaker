@@ -14,6 +14,10 @@
 		F506F90529B217F700B728B4 /* CloudNegativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F90429B217F700B728B4 /* CloudNegativeTests.swift */; };
 		F506F90F29B217F700B728B4 /* CloudNegativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F90E29B217F700B728B4 /* CloudNegativeUITests.swift */; };
 		F506F91129B217F700B728B4 /* CloudNegativeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F91029B217F700B728B4 /* CloudNegativeUITestsLaunchTests.swift */; };
+		F53396E429BCD30B00017FA5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F53396E229BCD30B00017FA5 /* Model.xcdatamodeld */; };
+		F53396EB29BCD47800017FA5 /* Cloud+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53396E929BCD47800017FA5 /* Cloud+CoreDataClass.swift */; };
+		F53396EC29BCD47800017FA5 /* Cloud+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53396EA29BCD47800017FA5 /* Cloud+CoreDataProperties.swift */; };
+		F53396EE29BCD54A00017FA5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53396ED29BCD54A00017FA5 /* DataController.swift */; };
 		F5D0FB6229B74FCF00F65C37 /* TextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0FB6129B74FCF00F65C37 /* TextViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +49,10 @@
 		F506F90A29B217F700B728B4 /* CloudNegativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudNegativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F506F90E29B217F700B728B4 /* CloudNegativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNegativeUITests.swift; sourceTree = "<group>"; };
 		F506F91029B217F700B728B4 /* CloudNegativeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNegativeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F53396E329BCD30B00017FA5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F53396E929BCD47800017FA5 /* Cloud+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F53396EA29BCD47800017FA5 /* Cloud+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F53396ED29BCD54A00017FA5 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F5D0FB6129B74FCF00F65C37 /* TextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +84,9 @@
 		F506F8E729B217F500B728B4 = {
 			isa = PBXGroup;
 			children = (
+				F53396E929BCD47800017FA5 /* Cloud+CoreDataClass.swift */,
+				F53396EA29BCD47800017FA5 /* Cloud+CoreDataProperties.swift */,
+				F53396E229BCD30B00017FA5 /* Model.xcdatamodeld */,
 				F506F8F229B217F500B728B4 /* CloudNegative */,
 				F506F90329B217F700B728B4 /* CloudNegativeTests */,
 				F506F90D29B217F700B728B4 /* CloudNegativeUITests */,
@@ -96,6 +107,7 @@
 		F506F8F229B217F500B728B4 /* CloudNegative */ = {
 			isa = PBXGroup;
 			children = (
+				F53396ED29BCD54A00017FA5 /* DataController.swift */,
 				F506F8F329B217F500B728B4 /* CloudNegativeApp.swift */,
 				F506F8F529B217F500B728B4 /* ContentView.swift */,
 				F5D0FB6129B74FCF00F65C37 /* TextViewModel.swift */,
@@ -263,6 +275,10 @@
 				F5D0FB6229B74FCF00F65C37 /* TextViewModel.swift in Sources */,
 				F506F8F629B217F500B728B4 /* ContentView.swift in Sources */,
 				F506F8F429B217F500B728B4 /* CloudNegativeApp.swift in Sources */,
+				F53396EE29BCD54A00017FA5 /* DataController.swift in Sources */,
+				F53396E429BCD30B00017FA5 /* Model.xcdatamodeld in Sources */,
+				F53396EB29BCD47800017FA5 /* Cloud+CoreDataClass.swift in Sources */,
+				F53396EC29BCD47800017FA5 /* Cloud+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +605,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F53396E229BCD30B00017FA5 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F53396E329BCD30B00017FA5 /* Model.xcdatamodel */,
+			);
+			currentVersion = F53396E329BCD30B00017FA5 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F506F8E829B217F500B728B4 /* Project object */;
 }

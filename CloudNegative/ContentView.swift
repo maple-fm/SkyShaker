@@ -13,10 +13,10 @@ struct ContentView: View {
 
     var body: some View {
         if colorScheme == .dark {
-            DarkModeView()
+            CloudView(color: "Night", image: "moon")
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         } else {
-            LightModeView()
+            CloudView(color: "Sky", image: "sun")
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
 
@@ -25,6 +25,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        LightModeView()
+        ContentView()
     }
 }

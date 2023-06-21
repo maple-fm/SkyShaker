@@ -18,8 +18,7 @@
 		F53396EB29BCD47800017FA5 /* Cloud+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53396E929BCD47800017FA5 /* Cloud+CoreDataClass.swift */; };
 		F53396EC29BCD47800017FA5 /* Cloud+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53396EA29BCD47800017FA5 /* Cloud+CoreDataProperties.swift */; };
 		F53396EE29BCD54A00017FA5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53396ED29BCD54A00017FA5 /* DataController.swift */; };
-		F5599FC92A3D53E600D517CF /* DarkModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5599FC82A3D53E600D517CF /* DarkModeView.swift */; };
-		F5599FCB2A3D566200D517CF /* LightModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5599FCA2A3D566200D517CF /* LightModeView.swift */; };
+		F5A9A7C92A4333A00006A6B8 /* CloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9A7C82A4333A00006A6B8 /* CloudView.swift */; };
 		F5D0FB6229B74FCF00F65C37 /* TextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0FB6129B74FCF00F65C37 /* TextViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +54,7 @@
 		F53396E929BCD47800017FA5 /* Cloud+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F53396EA29BCD47800017FA5 /* Cloud+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F53396ED29BCD54A00017FA5 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		F5599FC82A3D53E600D517CF /* DarkModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeView.swift; sourceTree = "<group>"; };
-		F5599FCA2A3D566200D517CF /* LightModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightModeView.swift; sourceTree = "<group>"; };
+		F5A9A7C82A4333A00006A6B8 /* CloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudView.swift; sourceTree = "<group>"; };
 		F5D0FB6129B74FCF00F65C37 /* TextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,11 +112,10 @@
 				F53396ED29BCD54A00017FA5 /* DataController.swift */,
 				F506F8F329B217F500B728B4 /* CloudNegativeApp.swift */,
 				F506F8F529B217F500B728B4 /* ContentView.swift */,
+				F5A9A7C82A4333A00006A6B8 /* CloudView.swift */,
 				F5D0FB6129B74FCF00F65C37 /* TextViewModel.swift */,
 				F506F8F729B217F600B728B4 /* Assets.xcassets */,
 				F506F8F929B217F600B728B4 /* Preview Content */,
-				F5599FC82A3D53E600D517CF /* DarkModeView.swift */,
-				F5599FCA2A3D566200D517CF /* LightModeView.swift */,
 			);
 			path = CloudNegative;
 			sourceTree = "<group>";
@@ -281,11 +278,10 @@
 				F5D0FB6229B74FCF00F65C37 /* TextViewModel.swift in Sources */,
 				F506F8F629B217F500B728B4 /* ContentView.swift in Sources */,
 				F506F8F429B217F500B728B4 /* CloudNegativeApp.swift in Sources */,
-				F5599FC92A3D53E600D517CF /* DarkModeView.swift in Sources */,
-				F5599FCB2A3D566200D517CF /* LightModeView.swift in Sources */,
 				F53396EE29BCD54A00017FA5 /* DataController.swift in Sources */,
 				F53396E429BCD30B00017FA5 /* Model.xcdatamodeld in Sources */,
 				F53396EB29BCD47800017FA5 /* Cloud+CoreDataClass.swift in Sources */,
+				F5A9A7C92A4333A00006A6B8 /* CloudView.swift in Sources */,
 				F53396EC29BCD47800017FA5 /* Cloud+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

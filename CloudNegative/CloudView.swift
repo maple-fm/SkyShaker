@@ -1,25 +1,32 @@
 //
-//  LightModeView.swift
+//  CloudView.swift
 //  CloudNegative
 //
-//  Created by 出口楓真 on 2023/06/17.
+//  Created by 出口楓真 on 2023/06/21.
 //
 
 import SwiftUI
 
-struct LightModeView: View {
+struct CloudView: View {
 
     @FetchRequest(sortDescriptors: []) var clouds: FetchedResults<Cloud>
     @StateObject private var viewModel = TextViewModel()
     @State private var cloudOffset: CGFloat = UIScreen.main.bounds.width
     @State var opacity: CGFloat = 0
+    var backgroundColor: String
+    var backgroundImage: String
+    
+    init(color backgroundColor: String, image backgroundImage: String) {
+        self.backgroundColor = backgroundColor
+        self.backgroundImage = backgroundImage
+    }
 
     var body: some View {
         ZStack {
-            Color(UIColor(named: "Sky")!)
+            Color(UIColor(named: backgroundColor)!)
                 .ignoresSafeArea()
 
-            Image("sun")
+            Image(backgroundImage)
                 .resizable()
                 .frame(width: 200, height: 200)
                 .offset(x: -100, y:-300)
@@ -52,6 +59,7 @@ struct LightModeView: View {
                                            }())
 
                                     Text(negative)
+                                        .foregroundColor(.black)
                                         .frame(width: { () -> CGFloat in
                                             if viewModel.textValidated(negative.count) {
                                                 return 80
@@ -108,11 +116,12 @@ struct LightModeView: View {
     }
 }
 
-struct LightModeView_Previews: PreviewProvider {
+struct CloudView_Previews: PreviewProvider {
     static var previews: some View {
-        LightModeView()
+        CloudView(color: "Sky", image: "sun")
     }
 }
+
 
 extension NSNotification.Name {
     public static let deviceDidShakeNotification = NSNotification.Name("DeviceDidShakeNotification")

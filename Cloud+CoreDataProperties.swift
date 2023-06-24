@@ -16,10 +16,10 @@ extension Cloud {
         return NSFetchRequest<Cloud>(entityName: "Cloud")
     }
 
-    @NSManaged public var id: UUID
+    @NSManaged public var id: String
     @NSManaged public var content: String
-    @NSManaged public var createTime: Date
-    @NSManaged public var opacity: Int16
+    @NSManaged public var createdDate: Date
+    @NSManaged public var opacity: Double
 
 }
 

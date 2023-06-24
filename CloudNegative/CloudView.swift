@@ -9,10 +9,10 @@ import SwiftUI
 
 struct CloudView: View {
 
-    @FetchRequest(sortDescriptors: []) var clouds: FetchedResults<Cloud>
-    @StateObject private var viewModel = TextViewModel()
+    @State private var textFieldInput = ""
+    @StateObject private var viewModel = CloudViewModel()
     @State private var cloudOffset: CGFloat = UIScreen.main.bounds.width
-    @State var opacity: CGFloat = 0
+    @State private var cloudOpacity: Double = 0.0
     var backgroundColor: String
     var backgroundImage: String
     
@@ -33,53 +33,23 @@ struct CloudView: View {
 
             VStack {
                 ZStack {
-                    ForEach(viewModel.negatives, id: \.self) { negative in
-                        if self.opacity < 100 {
-                            ZStack {
-                                Image("cloud")
-                                    .resizable()
-                                    .frame(
-                                        width: { () -> CGFloat in
-                                            if viewModel.textValidated(negative.count) {
-                                                return 100
-                                            } else if negative.count > 20 {
-                                                return CGFloat(negative.count) * 10
-                                            } else {
-                                                return CGFloat(negative.count) * 25
-                                            }
-                                        }(),
-                                       height: { () -> CGFloat in
-                                               if viewModel.textValidated(negative.count) {
-                                                   return 80
-                                               } else if negative.count > 20 {
-                                                   return CGFloat(negative.count) * 6
-                                               } else {
-                                                   return CGFloat(negative.count) * 10
-                                               }
-                                           }())
-
-                                    Text(negative)
-                                        .foregroundColor(.black)
-                                        .frame(width: { () -> CGFloat in
-                                            if viewModel.textValidated(negative.count) {
-                                                return 80
-                                            } else if negative.count > 20 {
-                                                return CGFloat(negative.count) * 5
-                                            } else {
-                                                return CGFloat(negative.count) * 10
-                                            }
-                                        }())
-                            }
+                    ForEach(viewModel.clouds, id: \.self) { cloud in
+                        CloudShape(viewModel: viewModel, negative: cloud.content)
                             .offset(x: CGFloat.random(in: -cloudOffset..<cloudOffset), y: CGFloat(Int.random(in: -100 ..< 50))*CGFloat(Int.random(in: 0 ..< 5)))
                             .animation(.linear(duration: Double.random(in: 20..<21)).repeatForever(autoreverses: true))
-                            .opacity(Double(1-opacity/100))
-                        }
+                            .opacity(1-cloud.opacity/10)
+                            .onAppear {
+                                withAnimation(.linear(duration: Double.random(in: 20..<21)).repeatForever(autoreverses: true), {})
+
+                            }
+                                
 
                     }
+                    
 
                     Spacer()
                     HStack {
-                        TextField("不満", text: $viewModel.text)
+                        TextField("不満", text: $textFieldInput)
                             .padding(.trailing, 35)
                             .padding(10)
                             .background(Color(UIColor(named: "inputColor")!))
@@ -90,7 +60,8 @@ struct CloudView: View {
                             .offset(x: 0, y:350)
 
                         Button(action: {
-                            viewModel.save()
+                            viewModel.saveCloud(content: textFieldInput, opacity: 0)
+                            textFieldInput = ""
                         }) {
                             Image("submit")
                                 .resizable()
@@ -108,8 +79,10 @@ struct CloudView: View {
             }
             .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
                 print("シェイクしたよ")
-                opacity += 2
-                print(opacity)
+                cloudOpacity += 0.2
+                print(cloudOpacity)
+                viewModel.updateCloudOpacity(newOpacity: cloudOpacity)
+                cloudOpacity = 0
             }
         }
 
@@ -119,6 +92,53 @@ struct CloudView: View {
 struct CloudView_Previews: PreviewProvider {
     static var previews: some View {
         CloudView(color: "Sky", image: "sun")
+    }
+}
+
+struct CloudShape: View {
+    var viewModel: CloudViewModel
+    let negative: String
+    
+    var body: some View {
+        ZStack {
+            Image("cloud")
+                .resizable()
+                .frame(width: cloudWidth, height: cloudHeight)
+            
+            Text(negative)
+                .foregroundColor(.black)
+                .frame(width: textWidth)
+        }
+    }
+
+    private var cloudWidth: CGFloat {
+        if viewModel.textValidated(negative.count) {
+            return 100
+        } else if negative.count > 20 {
+            return CGFloat(negative.count) * 10
+        } else {
+            return CGFloat(negative.count) * 25
+        }
+    }
+    
+    private var cloudHeight: CGFloat {
+        if viewModel.textValidated(negative.count) {
+            return 80
+        } else if negative.count > 20 {
+            return CGFloat(negative.count) * 6
+        } else {
+            return CGFloat(negative.count) * 10
+        }
+    }
+
+    private var textWidth: CGFloat {
+        if viewModel.textValidated(negative.count) {
+            return 80
+        } else if negative.count > 20 {
+            return CGFloat(negative.count) * 5
+        } else {
+            return CGFloat(negative.count) * 10
+        }
     }
 }
 

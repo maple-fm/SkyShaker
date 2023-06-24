@@ -23,7 +23,6 @@ class CloudViewModel: ObservableObject {
         }
         
         self.fetchClouds()
-
     }
 
     func saveCloud(content: String, opacity: Double) {

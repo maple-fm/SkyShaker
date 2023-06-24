@@ -13,6 +13,7 @@ struct CloudView: View {
     @StateObject private var viewModel = CloudViewModel()
     @State private var cloudOffset: CGFloat = UIScreen.main.bounds.width
     @State private var cloudOpacity: Double = 0.0
+    @State private var isKeyboardVisible = false
     var backgroundColor: String
     var backgroundImage: String
     
@@ -38,12 +39,10 @@ struct CloudView: View {
                             .offset(x: CGFloat.random(in: -cloudOffset..<cloudOffset), y: CGFloat(Int.random(in: -100 ..< 50))*CGFloat(Int.random(in: 0 ..< 5)))
                             .animation(.linear(duration: Double.random(in: 20..<21)).repeatForever(autoreverses: true))
                             .opacity(1-cloud.opacity/10)
-                                
-
                     }
                     
-
                     Spacer()
+                    
                     HStack {
                         TextField("不満", text: $textFieldInput)
                             .padding(.trailing, 35)
@@ -65,9 +64,6 @@ struct CloudView: View {
                         }
                         .offset(x: -80, y: 350)
                     }
-
-
-
                 }
             }
             .onAppear {

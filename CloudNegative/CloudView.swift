@@ -38,10 +38,6 @@ struct CloudView: View {
                             .offset(x: CGFloat.random(in: -cloudOffset..<cloudOffset), y: CGFloat(Int.random(in: -100 ..< 50))*CGFloat(Int.random(in: 0 ..< 5)))
                             .animation(.linear(duration: Double.random(in: 20..<21)).repeatForever(autoreverses: true))
                             .opacity(1-cloud.opacity/10)
-                            .onAppear {
-                                withAnimation(.linear(duration: Double.random(in: 20..<21)).repeatForever(autoreverses: true), {})
-
-                            }
                                 
 
                     }

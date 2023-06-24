@@ -17,7 +17,6 @@
 		F53396E429BCD30B00017FA5 /* Cloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F53396E229BCD30B00017FA5 /* Cloud.xcdatamodeld */; };
 		F53396EB29BCD47800017FA5 /* Cloud+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53396E929BCD47800017FA5 /* Cloud+CoreDataClass.swift */; };
 		F53396EC29BCD47800017FA5 /* Cloud+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53396EA29BCD47800017FA5 /* Cloud+CoreDataProperties.swift */; };
-		F53396EE29BCD54A00017FA5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53396ED29BCD54A00017FA5 /* DataController.swift */; };
 		F5A9A7C92A4333A00006A6B8 /* CloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9A7C82A4333A00006A6B8 /* CloudView.swift */; };
 		F5D0FB6229B74FCF00F65C37 /* CloudViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0FB6129B74FCF00F65C37 /* CloudViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -53,7 +52,6 @@
 		F53396E329BCD30B00017FA5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F53396E929BCD47800017FA5 /* Cloud+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F53396EA29BCD47800017FA5 /* Cloud+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		F53396ED29BCD54A00017FA5 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F5A9A7C82A4333A00006A6B8 /* CloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudView.swift; sourceTree = "<group>"; };
 		F5D0FB6129B74FCF00F65C37 /* CloudViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +107,6 @@
 		F506F8F229B217F500B728B4 /* CloudNegative */ = {
 			isa = PBXGroup;
 			children = (
-				F53396ED29BCD54A00017FA5 /* DataController.swift */,
 				F506F8F329B217F500B728B4 /* CloudNegativeApp.swift */,
 				F506F8F529B217F500B728B4 /* ContentView.swift */,
 				F5A9A7C82A4333A00006A6B8 /* CloudView.swift */,
@@ -278,7 +275,6 @@
 				F5D0FB6229B74FCF00F65C37 /* CloudViewModel.swift in Sources */,
 				F506F8F629B217F500B728B4 /* ContentView.swift in Sources */,
 				F506F8F429B217F500B728B4 /* CloudNegativeApp.swift in Sources */,
-				F53396EE29BCD54A00017FA5 /* DataController.swift in Sources */,
 				F53396E429BCD30B00017FA5 /* Cloud.xcdatamodeld in Sources */,
 				F53396EB29BCD47800017FA5 /* Cloud+CoreDataClass.swift in Sources */,
 				F5A9A7C92A4333A00006A6B8 /* CloudView.swift in Sources */,

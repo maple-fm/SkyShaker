@@ -46,6 +46,9 @@ class CloudViewModel: ObservableObject {
     func fetchClouds() {
         let request: NSFetchRequest<Cloud> = Cloud.fetchRequest()
         
+        let predicate = NSPredicate(format: "opacity < 100")
+        request.predicate = predicate
+        
         do {
             let fetchClouds = try persistentContainer.viewContext.fetch(request)
             clouds = fetchClouds.shuffled()

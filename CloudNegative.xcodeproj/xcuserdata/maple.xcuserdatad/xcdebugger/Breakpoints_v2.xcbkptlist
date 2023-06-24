@@ -94,8 +94,8 @@
             filePath = "CloudNegative/CloudViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "updateCloudOpacity(newOpacity:)"
             landmarkType = "7">
             <Locations>

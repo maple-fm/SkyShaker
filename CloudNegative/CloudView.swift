@@ -13,7 +13,7 @@ struct CloudView: View {
     @StateObject private var viewModel = CloudViewModel()
     @State private var cloudOffset: CGFloat = UIScreen.main.bounds.width
     @State private var cloudOpacity: Double = 0.0
-    @State private var isKeyboardVisible = false
+    @State private var isPopupPresented = false
     var backgroundColor: String
     var backgroundImage: String
     
@@ -26,11 +26,15 @@ struct CloudView: View {
         ZStack {
             Color(UIColor(named: backgroundColor)!)
                 .ignoresSafeArea()
-
-            Image(backgroundImage)
-                .resizable()
-                .frame(width: 200, height: 200)
-                .offset(x: -100, y:-300)
+            
+            Button(action: {
+                isPopupPresented = true
+            }) {
+                Image(backgroundImage)
+                    .resizable()
+                    .frame(width: 200, height: 200)
+            }
+            .offset(x: -100, y:-300)
 
             VStack {
                 ZStack {
@@ -77,6 +81,14 @@ struct CloudView: View {
                 cloudOpacity = 0
             }
         }
+        .overlay(
+            ZStack {
+                if isPopupPresented {
+                    SettingPopup(isPresented: $isPopupPresented)
+                        .transition(.move(edge: .bottom))
+                }
+            }
+        )
 
     }
 }

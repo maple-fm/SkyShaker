@@ -17,7 +17,10 @@
 		F53396E429BCD30B00017FA5 /* Cloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F53396E229BCD30B00017FA5 /* Cloud.xcdatamodeld */; };
 		F53396EB29BCD47800017FA5 /* Cloud+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53396E929BCD47800017FA5 /* Cloud+CoreDataClass.swift */; };
 		F53396EC29BCD47800017FA5 /* Cloud+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53396EA29BCD47800017FA5 /* Cloud+CoreDataProperties.swift */; };
+		F560E7902A4C40E600F1AB40 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F560E78F2A4C40E600F1AB40 /* Privacy.swift */; };
+		F560E7922A4C40FB00F1AB40 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F560E7912A4C40FB00F1AB40 /* Feedback.swift */; };
 		F5A9A7C92A4333A00006A6B8 /* CloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9A7C82A4333A00006A6B8 /* CloudView.swift */; };
+		F5C4A1032A46F71200CC2F52 /* SettingPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C4A1022A46F71200CC2F52 /* SettingPopup.swift */; };
 		F5D0FB6229B74FCF00F65C37 /* CloudViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0FB6129B74FCF00F65C37 /* CloudViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +55,10 @@
 		F53396E329BCD30B00017FA5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F53396E929BCD47800017FA5 /* Cloud+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F53396EA29BCD47800017FA5 /* Cloud+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F560E78F2A4C40E600F1AB40 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
+		F560E7912A4C40FB00F1AB40 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		F5A9A7C82A4333A00006A6B8 /* CloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudView.swift; sourceTree = "<group>"; };
+		F5C4A1022A46F71200CC2F52 /* SettingPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPopup.swift; sourceTree = "<group>"; };
 		F5D0FB6129B74FCF00F65C37 /* CloudViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				F506F8F329B217F500B728B4 /* CloudNegativeApp.swift */,
+				F560E7932A4C534300F1AB40 /* Setting */,
 				F506F8F529B217F500B728B4 /* ContentView.swift */,
 				F5A9A7C82A4333A00006A6B8 /* CloudView.swift */,
 				F5D0FB6129B74FCF00F65C37 /* CloudViewModel.swift */,
@@ -140,6 +147,16 @@
 				F506F91029B217F700B728B4 /* CloudNegativeUITestsLaunchTests.swift */,
 			);
 			path = CloudNegativeUITests;
+			sourceTree = "<group>";
+		};
+		F560E7932A4C534300F1AB40 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				F5C4A1022A46F71200CC2F52 /* SettingPopup.swift */,
+				F560E78F2A4C40E600F1AB40 /* Privacy.swift */,
+				F560E7912A4C40FB00F1AB40 /* Feedback.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,10 +291,13 @@
 			files = (
 				F5D0FB6229B74FCF00F65C37 /* CloudViewModel.swift in Sources */,
 				F506F8F629B217F500B728B4 /* ContentView.swift in Sources */,
+				F560E7922A4C40FB00F1AB40 /* Feedback.swift in Sources */,
 				F506F8F429B217F500B728B4 /* CloudNegativeApp.swift in Sources */,
 				F53396E429BCD30B00017FA5 /* Cloud.xcdatamodeld in Sources */,
 				F53396EB29BCD47800017FA5 /* Cloud+CoreDataClass.swift in Sources */,
+				F560E7902A4C40E600F1AB40 /* Privacy.swift in Sources */,
 				F5A9A7C92A4333A00006A6B8 /* CloudView.swift in Sources */,
+				F5C4A1032A46F71200CC2F52 /* SettingPopup.swift in Sources */,
 				F53396EC29BCD47800017FA5 /* Cloud+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

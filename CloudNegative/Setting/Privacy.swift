@@ -12,6 +12,7 @@ struct Privacy: View {
         VStack {
             Text("Privacy")
                 .font(.title)
+                .foregroundColor(.black)
                 .padding()
 
         }

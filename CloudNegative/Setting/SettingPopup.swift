@@ -31,7 +31,7 @@ struct SettingPopup: View {
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
                 .animation(.easeInOut) // ページ切り替え時のアニメーションを追加
-                .frame(width: 350, height: 350)
+                .frame(width: 400, height: 350)
 
                 
                 HStack {

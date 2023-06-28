@@ -12,6 +12,7 @@ struct Feedback: View {
         VStack {
             Text("Feedback")
                 .font(.title)
+                .foregroundColor(.black)
                 .padding()
             
         }

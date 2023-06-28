@@ -18,7 +18,6 @@ struct Feedback: View {
         .frame(width: UIScreen.main.bounds.width * 0.8, height: UIScreen.main.bounds.width * 0.8)
         .background(Color.white)
         .cornerRadius(10)
-        .animation(.easeInOut)
         .transition(.move(edge: .trailing)) // スワイプ時のアニメーションを追加
     }
 }

@@ -18,7 +18,7 @@ struct Privacy: View {
         .frame(width: UIScreen.main.bounds.width * 0.8, height: UIScreen.main.bounds.width * 0.8)
         .background(Color.white)
         .cornerRadius(10)
-        .transition(.move(edge: .leading)) // スワイプ時のアニメーションを追加
+        .transition(.move(edge: .trailing)) // スワイプ時のアニメーションを追加
     }
 }
 

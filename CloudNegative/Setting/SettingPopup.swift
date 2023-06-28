@@ -30,7 +30,9 @@ struct SettingPopup: View {
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-                .frame(width: 300, height: 300)
+                .animation(.easeInOut) // ページ切り替え時のアニメーションを追加
+                .frame(width: 350, height: 350)
+
                 
                 HStack {
                     ForEach(0..<pages.count) { index in
@@ -43,6 +45,7 @@ struct SettingPopup: View {
                 .padding(.vertical, 20)
                 
             }
+//            .frame(width: 300, height: 300)
         }
         .onAppear {
             currentPage = 0 // ポップアップが表示された時に現在のページをリセットする

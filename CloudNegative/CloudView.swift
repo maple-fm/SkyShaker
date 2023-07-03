@@ -74,9 +74,7 @@ struct CloudView: View {
                 self.cloudOffset = 200
             }
             .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
-                print("シェイクしたよ")
                 cloudOpacity += 0.2
-                print(cloudOpacity)
                 viewModel.updateCloudOpacity(newOpacity: cloudOpacity)
                 cloudOpacity = 0
             }
@@ -98,54 +96,6 @@ struct CloudView_Previews: PreviewProvider {
         CloudView(color: "Sky", image: "sun")
     }
 }
-
-struct CloudShape: View {
-    var viewModel: CloudViewModel
-    let negative: String
-    
-    var body: some View {
-        ZStack {
-            Image("cloud")
-                .resizable()
-                .frame(width: cloudWidth, height: cloudHeight)
-            
-            Text(negative)
-                .foregroundColor(.black)
-                .frame(width: textWidth)
-        }
-    }
-
-    private var cloudWidth: CGFloat {
-        if viewModel.textValidated(negative.count) {
-            return 100
-        } else if negative.count > 20 {
-            return CGFloat(negative.count) * 10
-        } else {
-            return CGFloat(negative.count) * 25
-        }
-    }
-    
-    private var cloudHeight: CGFloat {
-        if viewModel.textValidated(negative.count) {
-            return 80
-        } else if negative.count > 20 {
-            return CGFloat(negative.count) * 6
-        } else {
-            return CGFloat(negative.count) * 10
-        }
-    }
-
-    private var textWidth: CGFloat {
-        if viewModel.textValidated(negative.count) {
-            return 80
-        } else if negative.count > 20 {
-            return CGFloat(negative.count) * 5
-        } else {
-            return CGFloat(negative.count) * 10
-        }
-    }
-}
-
 
 extension NSNotification.Name {
     public static let deviceDidShakeNotification = NSNotification.Name("DeviceDidShakeNotification")

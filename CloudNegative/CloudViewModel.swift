@@ -13,6 +13,7 @@ class CloudViewModel: ObservableObject {
 
     @Published var clouds: [Cloud] = []
     private let persistentContainer: NSPersistentContainer
+    let mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
         
     init() {
         persistentContainer = NSPersistentContainer(name: "Cloud")
@@ -57,7 +58,8 @@ class CloudViewModel: ObservableObject {
     }
     
     func updateCloudOpacity(newOpacity: Double) {
-       let context = persistentContainer.viewContext
+        let context = persistentContainer.viewContext
+        context.mergePolicy = mergePolicy
        
        context.perform {
            for cloud in self.clouds {

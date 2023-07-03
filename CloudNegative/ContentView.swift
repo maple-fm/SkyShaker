@@ -9,14 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
+    let hasLaunchedKey = "hasLaunched"
+    
+    @State private var hasLaunchedBefore: Bool =  !UserDefaults.standard.bool(forKey: "hasLaunched")
 
     var body: some View {
-        if colorScheme == .dark {
-            CloudView(color: "Night", image: "moon")
+        if hasLaunchedBefore {
+            TutrialView()
+                .onAppear {
+                    UserDefaults.standard.set(true, forKey: hasLaunchedKey)
+                    hasLaunchedBefore = true
+                }
         } else {
-            CloudView(color: "Sky", image: "sun")
+            if colorScheme == .dark {
+                CloudView(color: "Night", image: "moon")
+            } else {
+                CloudView(color: "Sky", image: "sun")
+            }
         }
-
+        
     }
 }
 

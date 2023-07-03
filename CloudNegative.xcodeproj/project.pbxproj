@@ -15,6 +15,8 @@
 		F506F90F29B217F700B728B4 /* CloudNegativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F90E29B217F700B728B4 /* CloudNegativeUITests.swift */; };
 		F506F91129B217F700B728B4 /* CloudNegativeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F91029B217F700B728B4 /* CloudNegativeUITestsLaunchTests.swift */; };
 		F527B8172A4C78BB006EBE2A /* CloudShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F527B8162A4C78BB006EBE2A /* CloudShape.swift */; };
+		F528349A2A52BE3B005F3DAC /* TutrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52834992A52BE3B005F3DAC /* TutrialView.swift */; };
+		F528349C2A52C5E8005F3DAC /* Tutrial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528349B2A52C5E8005F3DAC /* Tutrial.swift */; };
 		F53396E429BCD30B00017FA5 /* Cloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F53396E229BCD30B00017FA5 /* Cloud.xcdatamodeld */; };
 		F53396EB29BCD47800017FA5 /* Cloud+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53396E929BCD47800017FA5 /* Cloud+CoreDataClass.swift */; };
 		F53396EC29BCD47800017FA5 /* Cloud+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53396EA29BCD47800017FA5 /* Cloud+CoreDataProperties.swift */; };
@@ -54,6 +56,8 @@
 		F506F90E29B217F700B728B4 /* CloudNegativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNegativeUITests.swift; sourceTree = "<group>"; };
 		F506F91029B217F700B728B4 /* CloudNegativeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNegativeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F527B8162A4C78BB006EBE2A /* CloudShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudShape.swift; sourceTree = "<group>"; };
+		F52834992A52BE3B005F3DAC /* TutrialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutrialView.swift; sourceTree = "<group>"; };
+		F528349B2A52C5E8005F3DAC /* Tutrial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutrial.swift; sourceTree = "<group>"; };
 		F53396E329BCD30B00017FA5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F53396E929BCD47800017FA5 /* Cloud+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F53396EA29BCD47800017FA5 /* Cloud+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 				F506F8F329B217F500B728B4 /* CloudNegativeApp.swift */,
 				F560E7932A4C534300F1AB40 /* Setting */,
 				F506F8F529B217F500B728B4 /* ContentView.swift */,
+				F52834992A52BE3B005F3DAC /* TutrialView.swift */,
 				F5A9A7C82A4333A00006A6B8 /* CloudView.swift */,
 				F5D0FB6129B74FCF00F65C37 /* CloudViewModel.swift */,
 				F527B8162A4C78BB006EBE2A /* CloudShape.swift */,
@@ -158,6 +163,7 @@
 				F5C4A1022A46F71200CC2F52 /* SettingPopup.swift */,
 				F560E78F2A4C40E600F1AB40 /* Privacy.swift */,
 				F560E7912A4C40FB00F1AB40 /* Feedback.swift */,
+				F528349B2A52C5E8005F3DAC /* Tutrial.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -300,6 +306,8 @@
 				F527B8172A4C78BB006EBE2A /* CloudShape.swift in Sources */,
 				F53396EB29BCD47800017FA5 /* Cloud+CoreDataClass.swift in Sources */,
 				F560E7902A4C40E600F1AB40 /* Privacy.swift in Sources */,
+				F528349C2A52C5E8005F3DAC /* Tutrial.swift in Sources */,
+				F528349A2A52BE3B005F3DAC /* TutrialView.swift in Sources */,
 				F5A9A7C92A4333A00006A6B8 /* CloudView.swift in Sources */,
 				F5C4A1032A46F71200CC2F52 /* SettingPopup.swift in Sources */,
 				F53396EC29BCD47800017FA5 /* Cloud+CoreDataProperties.swift in Sources */,

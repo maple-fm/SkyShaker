@@ -146,6 +146,173 @@
             endingLineNumber = "97"
             landmarkName = "previews"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "5F1C7F63-DCE5-4FB0-B66C-18A6C5D8C063 - 842c4d97882ad484"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static CloudNegative.CloudView_Previews.previews.getter : some"
+                  moduleName = "CloudNegative"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maple/Desktop/Swiftapp/CloudNegative/CloudNegative/CloudView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "5F1C7F63-DCE5-4FB0-B66C-18A6C5D8C063 - 842c4d97882ad4a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static CloudNegative.CloudView_Previews.previews.getter : some"
+                  moduleName = "CloudNegative"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maple/Desktop/Swiftapp/CloudNegative/CloudNegative/CloudView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "596">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "898913D4-6D08-49A1-9150-CA52ADE7B4DD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
+            filePath = "CloudNegative/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.Log">
+                  <ActionContent
+                     message = "@hasLaunchedBefore@"
+                     conveyanceType = "0">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+            <Locations>
+               <Location
+                  uuid = "898913D4-6D08-49A1-9150-CA52ADE7B4DD - 39d7aa597f9d8b38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudNegative.ContentView.body.getter : some"
+                  moduleName = "CloudNegative"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maple/Desktop/Swiftapp/CloudNegative/CloudNegative/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "508">
+               </Location>
+               <Location
+                  uuid = "898913D4-6D08-49A1-9150-CA52ADE7B4DD - 39d7aa597f9d8b38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudNegative.ContentView.body.getter : some"
+                  moduleName = "CloudNegative"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maple/Desktop/Swiftapp/CloudNegative/CloudNegative/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "588">
+               </Location>
+               <Location
+                  uuid = "898913D4-6D08-49A1-9150-CA52ADE7B4DD - 39d7aa597f9d8b59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudNegative.ContentView.body.getter : some"
+                  moduleName = "CloudNegative"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maple/Desktop/Swiftapp/CloudNegative/CloudNegative/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "608">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94FBCDDB-CB23-48ED-9A95-95FDB6BF036A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CloudNegative/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "94FBCDDB-CB23-48ED-9A95-95FDB6BF036A - 39d7aa597f9d8b38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudNegative.ContentView.body.getter : some"
+                  moduleName = "CloudNegative"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maple/Desktop/Swiftapp/CloudNegative/CloudNegative/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "508">
+               </Location>
+               <Location
+                  uuid = "94FBCDDB-CB23-48ED-9A95-95FDB6BF036A - 39d7aa597f9d8b38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudNegative.ContentView.body.getter : some"
+                  moduleName = "CloudNegative"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maple/Desktop/Swiftapp/CloudNegative/CloudNegative/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "588">
+               </Location>
+               <Location
+                  uuid = "94FBCDDB-CB23-48ED-9A95-95FDB6BF036A - 39d7aa597f9d8b59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CloudNegative.ContentView.body.getter : some"
+                  moduleName = "CloudNegative"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maple/Desktop/Swiftapp/CloudNegative/CloudNegative/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "608">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

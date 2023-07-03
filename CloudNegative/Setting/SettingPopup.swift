@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingPopup: View {
     @Binding var isPresented: Bool
     @State private var currentPage = 0 // 現在のページを保持する状態変数
-    let pages: [AnyView] = [AnyView(Privacy()), AnyView(Feedback())] // 表示するページの配列
+    let pages: [AnyView] = [AnyView(Privacy()), AnyView(Feedback()), AnyView(Tutrial())] // 表示するページの配列
     
     var body: some View {
         ZStack {

@@ -10,10 +10,20 @@ import SwiftUI
 struct Feedback: View {
     var body: some View {
         VStack {
-            Text("Feedback")
-                .font(.title)
-                .foregroundColor(.black)
-                .padding()
+            Button(action: {},
+                   label: {
+                VStack {
+                    Image(systemName: "star")
+                        .resizable()
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(.black)
+                    
+                    Text("フィードバック")
+                        .font(.title)
+                        .foregroundColor(.black)
+                        .padding()
+                }
+            })
             
         }
         .frame(width: UIScreen.main.bounds.width * 0.8, height: UIScreen.main.bounds.width * 0.8)

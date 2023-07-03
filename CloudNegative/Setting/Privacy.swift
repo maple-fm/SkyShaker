@@ -10,10 +10,20 @@ import SwiftUI
 struct Privacy: View {
     var body: some View {
         VStack {
-            Text("Privacy")
-                .font(.title)
-                .foregroundColor(.black)
-                .padding()
+            Button(action: {},
+            label: {
+                VStack {
+                    Image(systemName: "shield")
+                        .resizable()
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(.black)
+                    
+                    Text("プライバシーポリシー")
+                        .font(.title)
+                        .foregroundColor(.black)
+                        .padding()
+                }
+            })
 
         }
         .frame(width: UIScreen.main.bounds.width * 0.8, height: UIScreen.main.bounds.width * 0.8)

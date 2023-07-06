@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct Privacy: View {
+    
+    @State private var showModal = false
+    
     var body: some View {
         VStack {
-            Button(action: {},
+            Button(action: {
+                showModal = true
+            },
             label: {
                 VStack {
                     Image(systemName: "shield")
@@ -30,6 +35,12 @@ struct Privacy: View {
         .background(Color.white)
         .cornerRadius(10)
         .transition(.move(edge: .trailing)) // スワイプ時のアニメーションを追加
+        .sheet(isPresented: $showModal, content: {
+            VStack {
+                WebView(url: URL(string: "https://maple-fm.github.io/maple-apps/skyShaker/privacy.html")!)
+            }
+            .presentationDetents([.medium])
+        })
     }
 }
 

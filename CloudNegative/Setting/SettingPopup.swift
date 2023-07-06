@@ -26,6 +26,11 @@ struct SettingPopup: View {
                     ForEach(0..<pages.count, id: \.self) { index in
                         pages[index]
                             .tag(index)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color("Rectangle"), lineWidth: 5)
+                            )
+
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))

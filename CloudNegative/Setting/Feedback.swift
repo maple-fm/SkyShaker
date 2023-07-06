@@ -10,8 +10,12 @@ import SwiftUI
 struct Feedback: View {
     var body: some View {
         VStack {
-            Button(action: {},
-                   label: {
+            Button(action: {
+                if let url = URL(string: "https://itunes.apple.com/app/id6450996386?action=write-review") {
+                    UIApplication.shared.open(url)
+                }
+            },
+            label: {
                 VStack {
                     Image(systemName: "star")
                         .resizable()

@@ -47,14 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F506F8F029B217F500B728B4 /* CloudNegative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudNegative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F506F8F029B217F500B728B4 /* SkyShaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyShaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F506F8F329B217F500B728B4 /* CloudNegativeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNegativeApp.swift; sourceTree = "<group>"; };
 		F506F8F529B217F500B728B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F506F8F729B217F600B728B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F506F8FA29B217F600B728B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F506F90029B217F700B728B4 /* CloudNegativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudNegativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F506F90029B217F700B728B4 /* SkyShakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyShakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F506F90429B217F700B728B4 /* CloudNegativeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNegativeTests.swift; sourceTree = "<group>"; };
-		F506F90A29B217F700B728B4 /* CloudNegativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudNegativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F506F90A29B217F700B728B4 /* SkyShakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyShakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F506F90E29B217F700B728B4 /* CloudNegativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNegativeUITests.swift; sourceTree = "<group>"; };
 		F506F91029B217F700B728B4 /* CloudNegativeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNegativeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F527B8162A4C78BB006EBE2A /* CloudShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudShape.swift; sourceTree = "<group>"; };
@@ -113,9 +113,9 @@
 		F506F8F129B217F500B728B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F506F8F029B217F500B728B4 /* CloudNegative.app */,
-				F506F90029B217F700B728B4 /* CloudNegativeTests.xctest */,
-				F506F90A29B217F700B728B4 /* CloudNegativeUITests.xctest */,
+				F506F8F029B217F500B728B4 /* SkyShaker.app */,
+				F506F90029B217F700B728B4 /* SkyShakerTests.xctest */,
+				F506F90A29B217F700B728B4 /* SkyShakerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F506F8EF29B217F500B728B4 /* CloudNegative */ = {
+		F506F8EF29B217F500B728B4 /* SkyShaker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F506F91429B217F700B728B4 /* Build configuration list for PBXNativeTarget "CloudNegative" */;
+			buildConfigurationList = F506F91429B217F700B728B4 /* Build configuration list for PBXNativeTarget "SkyShaker" */;
 			buildPhases = (
 				F506F8EC29B217F500B728B4 /* Sources */,
 				F506F8ED29B217F500B728B4 /* Frameworks */,
@@ -189,14 +189,14 @@
 			);
 			dependencies = (
 			);
-			name = CloudNegative;
+			name = SkyShaker;
 			productName = CloudNegative;
-			productReference = F506F8F029B217F500B728B4 /* CloudNegative.app */;
+			productReference = F506F8F029B217F500B728B4 /* SkyShaker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F506F8FF29B217F700B728B4 /* CloudNegativeTests */ = {
+		F506F8FF29B217F700B728B4 /* SkyShakerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F506F91729B217F700B728B4 /* Build configuration list for PBXNativeTarget "CloudNegativeTests" */;
+			buildConfigurationList = F506F91729B217F700B728B4 /* Build configuration list for PBXNativeTarget "SkyShakerTests" */;
 			buildPhases = (
 				F506F8FC29B217F700B728B4 /* Sources */,
 				F506F8FD29B217F700B728B4 /* Frameworks */,
@@ -207,14 +207,14 @@
 			dependencies = (
 				F506F90229B217F700B728B4 /* PBXTargetDependency */,
 			);
-			name = CloudNegativeTests;
+			name = SkyShakerTests;
 			productName = CloudNegativeTests;
-			productReference = F506F90029B217F700B728B4 /* CloudNegativeTests.xctest */;
+			productReference = F506F90029B217F700B728B4 /* SkyShakerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F506F90929B217F700B728B4 /* CloudNegativeUITests */ = {
+		F506F90929B217F700B728B4 /* SkyShakerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F506F91A29B217F700B728B4 /* Build configuration list for PBXNativeTarget "CloudNegativeUITests" */;
+			buildConfigurationList = F506F91A29B217F700B728B4 /* Build configuration list for PBXNativeTarget "SkyShakerUITests" */;
 			buildPhases = (
 				F506F90629B217F700B728B4 /* Sources */,
 				F506F90729B217F700B728B4 /* Frameworks */,
@@ -225,9 +225,9 @@
 			dependencies = (
 				F506F90C29B217F700B728B4 /* PBXTargetDependency */,
 			);
-			name = CloudNegativeUITests;
+			name = SkyShakerUITests;
 			productName = CloudNegativeUITests;
-			productReference = F506F90A29B217F700B728B4 /* CloudNegativeUITests.xctest */;
+			productReference = F506F90A29B217F700B728B4 /* SkyShakerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -253,7 +253,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F506F8EB29B217F500B728B4 /* Build configuration list for PBXProject "CloudNegative" */;
+			buildConfigurationList = F506F8EB29B217F500B728B4 /* Build configuration list for PBXProject "SkyShaker" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -266,9 +266,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F506F8EF29B217F500B728B4 /* CloudNegative */,
-				F506F8FF29B217F700B728B4 /* CloudNegativeTests */,
-				F506F90929B217F700B728B4 /* CloudNegativeUITests */,
+				F506F8EF29B217F500B728B4 /* SkyShaker */,
+				F506F8FF29B217F700B728B4 /* SkyShakerTests */,
+				F506F90929B217F700B728B4 /* SkyShakerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -344,12 +344,12 @@
 /* Begin PBXTargetDependency section */
 		F506F90229B217F700B728B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F506F8EF29B217F500B728B4 /* CloudNegative */;
+			target = F506F8EF29B217F500B728B4 /* SkyShaker */;
 			targetProxy = F506F90129B217F700B728B4 /* PBXContainerItemProxy */;
 		};
 		F506F90C29B217F700B728B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F506F8EF29B217F500B728B4 /* CloudNegative */;
+			target = F506F8EF29B217F500B728B4 /* SkyShaker */;
 			targetProxy = F506F90B29B217F700B728B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -553,7 +553,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudNegative.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CloudNegative";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyShaker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkyShaker";
 			};
 			name = Debug;
 		};
@@ -573,7 +573,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudNegative.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CloudNegative";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyShaker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkyShaker";
 			};
 			name = Release;
 		};
@@ -616,7 +616,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F506F8EB29B217F500B728B4 /* Build configuration list for PBXProject "CloudNegative" */ = {
+		F506F8EB29B217F500B728B4 /* Build configuration list for PBXProject "SkyShaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F506F91229B217F700B728B4 /* Debug */,
@@ -625,7 +625,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F506F91429B217F700B728B4 /* Build configuration list for PBXNativeTarget "CloudNegative" */ = {
+		F506F91429B217F700B728B4 /* Build configuration list for PBXNativeTarget "SkyShaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F506F91529B217F700B728B4 /* Debug */,
@@ -634,7 +634,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F506F91729B217F700B728B4 /* Build configuration list for PBXNativeTarget "CloudNegativeTests" */ = {
+		F506F91729B217F700B728B4 /* Build configuration list for PBXNativeTarget "SkyShakerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F506F91829B217F700B728B4 /* Debug */,
@@ -643,7 +643,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F506F91A29B217F700B728B4 /* Build configuration list for PBXNativeTarget "CloudNegativeUITests" */ = {
+		F506F91A29B217F700B728B4 /* Build configuration list for PBXNativeTarget "SkyShakerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F506F91B29B217F700B728B4 /* Debug */,

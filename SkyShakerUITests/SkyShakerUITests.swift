@@ -1,13 +1,13 @@
 //
-//  CloudNegativeUITests.swift
-//  CloudNegativeUITests
+//  SkyShakerUITests.swift
+//  SkyShakerUITests
 //
 //  Created by 出口楓真 on 2023/03/03.
 //
 
 import XCTest
 
-final class CloudNegativeUITests: XCTestCase {
+final class SkyShakerUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

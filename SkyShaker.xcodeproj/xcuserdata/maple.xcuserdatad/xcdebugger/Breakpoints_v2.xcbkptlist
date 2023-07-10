@@ -177,6 +177,21 @@
                   endingLineNumber = "108"
                   offsetFromSymbolStart = "596">
                </Location>
+               <Location
+                  uuid = "5F1C7F63-DCE5-4FB0-B66C-18A6C5D8C063 - 2f2a15bd4242c4ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SkyShaker.CloudView_Previews.previews.getter : some"
+                  moduleName = "SkyShaker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maple/Desktop/Swiftapp/CloudNegative/CloudNegative/CloudView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "596">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

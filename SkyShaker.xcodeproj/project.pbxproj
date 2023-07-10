@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F506F8F429B217F500B728B4 /* CloudNegativeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F8F329B217F500B728B4 /* CloudNegativeApp.swift */; };
+		F506F8F429B217F500B728B4 /* SkyShakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F8F329B217F500B728B4 /* SkyShakerApp.swift */; };
 		F506F8F629B217F500B728B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F8F529B217F500B728B4 /* ContentView.swift */; };
 		F506F8F829B217F600B728B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F506F8F729B217F600B728B4 /* Assets.xcassets */; };
 		F506F8FB29B217F600B728B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F506F8FA29B217F600B728B4 /* Preview Assets.xcassets */; };
-		F506F90529B217F700B728B4 /* CloudNegativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F90429B217F700B728B4 /* CloudNegativeTests.swift */; };
-		F506F90F29B217F700B728B4 /* CloudNegativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F90E29B217F700B728B4 /* CloudNegativeUITests.swift */; };
-		F506F91129B217F700B728B4 /* CloudNegativeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F91029B217F700B728B4 /* CloudNegativeUITestsLaunchTests.swift */; };
+		F506F90529B217F700B728B4 /* SkyShakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F90429B217F700B728B4 /* SkyShakerTests.swift */; };
+		F506F90F29B217F700B728B4 /* SkyShakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F90E29B217F700B728B4 /* SkyShakerUITests.swift */; };
+		F506F91129B217F700B728B4 /* SkyShakerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F91029B217F700B728B4 /* SkyShakerUITestsLaunchTests.swift */; };
 		F527B8172A4C78BB006EBE2A /* CloudShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F527B8162A4C78BB006EBE2A /* CloudShape.swift */; };
 		F528349A2A52BE3B005F3DAC /* TutrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52834992A52BE3B005F3DAC /* TutrialView.swift */; };
 		F528349C2A52C5E8005F3DAC /* Tutrial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528349B2A52C5E8005F3DAC /* Tutrial.swift */; };
@@ -48,15 +48,15 @@
 
 /* Begin PBXFileReference section */
 		F506F8F029B217F500B728B4 /* SkyShaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyShaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F506F8F329B217F500B728B4 /* CloudNegativeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNegativeApp.swift; sourceTree = "<group>"; };
+		F506F8F329B217F500B728B4 /* SkyShakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyShakerApp.swift; sourceTree = "<group>"; };
 		F506F8F529B217F500B728B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F506F8F729B217F600B728B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F506F8FA29B217F600B728B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F506F90029B217F700B728B4 /* SkyShakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyShakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F506F90429B217F700B728B4 /* CloudNegativeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNegativeTests.swift; sourceTree = "<group>"; };
+		F506F90429B217F700B728B4 /* SkyShakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyShakerTests.swift; sourceTree = "<group>"; };
 		F506F90A29B217F700B728B4 /* SkyShakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyShakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F506F90E29B217F700B728B4 /* CloudNegativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNegativeUITests.swift; sourceTree = "<group>"; };
-		F506F91029B217F700B728B4 /* CloudNegativeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNegativeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F506F90E29B217F700B728B4 /* SkyShakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyShakerUITests.swift; sourceTree = "<group>"; };
+		F506F91029B217F700B728B4 /* SkyShakerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyShakerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F527B8162A4C78BB006EBE2A /* CloudShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudShape.swift; sourceTree = "<group>"; };
 		F52834992A52BE3B005F3DAC /* TutrialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutrialView.swift; sourceTree = "<group>"; };
 		F528349B2A52C5E8005F3DAC /* Tutrial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutrial.swift; sourceTree = "<group>"; };
@@ -103,9 +103,9 @@
 				F53396E929BCD47800017FA5 /* Cloud+CoreDataClass.swift */,
 				F53396EA29BCD47800017FA5 /* Cloud+CoreDataProperties.swift */,
 				F53396E229BCD30B00017FA5 /* Cloud.xcdatamodeld */,
-				F506F8F229B217F500B728B4 /* CloudNegative */,
-				F506F90329B217F700B728B4 /* CloudNegativeTests */,
-				F506F90D29B217F700B728B4 /* CloudNegativeUITests */,
+				F506F8F229B217F500B728B4 /* SkyShaker */,
+				F506F90329B217F700B728B4 /* SkyShakerTests */,
+				F506F90D29B217F700B728B4 /* SkyShakerUITests */,
 				F506F8F129B217F500B728B4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,10 +120,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F506F8F229B217F500B728B4 /* CloudNegative */ = {
+		F506F8F229B217F500B728B4 /* SkyShaker */ = {
 			isa = PBXGroup;
 			children = (
-				F506F8F329B217F500B728B4 /* CloudNegativeApp.swift */,
+				F506F8F329B217F500B728B4 /* SkyShakerApp.swift */,
 				F528349D2A52D19F005F3DAC /* SplashView.swift */,
 				F560E7932A4C534300F1AB40 /* Setting */,
 				F506F8F529B217F500B728B4 /* ContentView.swift */,
@@ -134,7 +134,7 @@
 				F506F8F729B217F600B728B4 /* Assets.xcassets */,
 				F506F8F929B217F600B728B4 /* Preview Content */,
 			);
-			path = CloudNegative;
+			path = SkyShaker;
 			sourceTree = "<group>";
 		};
 		F506F8F929B217F600B728B4 /* Preview Content */ = {
@@ -145,21 +145,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F506F90329B217F700B728B4 /* CloudNegativeTests */ = {
+		F506F90329B217F700B728B4 /* SkyShakerTests */ = {
 			isa = PBXGroup;
 			children = (
-				F506F90429B217F700B728B4 /* CloudNegativeTests.swift */,
+				F506F90429B217F700B728B4 /* SkyShakerTests.swift */,
 			);
-			path = CloudNegativeTests;
+			path = SkyShakerTests;
 			sourceTree = "<group>";
 		};
-		F506F90D29B217F700B728B4 /* CloudNegativeUITests */ = {
+		F506F90D29B217F700B728B4 /* SkyShakerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F506F90E29B217F700B728B4 /* CloudNegativeUITests.swift */,
-				F506F91029B217F700B728B4 /* CloudNegativeUITestsLaunchTests.swift */,
+				F506F90E29B217F700B728B4 /* SkyShakerUITests.swift */,
+				F506F91029B217F700B728B4 /* SkyShakerUITestsLaunchTests.swift */,
 			);
-			path = CloudNegativeUITests;
+			path = SkyShakerUITests;
 			sourceTree = "<group>";
 		};
 		F560E7932A4C534300F1AB40 /* Setting */ = {
@@ -307,7 +307,7 @@
 				F5D0FB6229B74FCF00F65C37 /* CloudViewModel.swift in Sources */,
 				F506F8F629B217F500B728B4 /* ContentView.swift in Sources */,
 				F560E7922A4C40FB00F1AB40 /* Feedback.swift in Sources */,
-				F506F8F429B217F500B728B4 /* CloudNegativeApp.swift in Sources */,
+				F506F8F429B217F500B728B4 /* SkyShakerApp.swift in Sources */,
 				F53396E429BCD30B00017FA5 /* Cloud.xcdatamodeld in Sources */,
 				F527B8172A4C78BB006EBE2A /* CloudShape.swift in Sources */,
 				F58CB1372A56F78A001648DB /* WebView.swift in Sources */,
@@ -326,7 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F506F90529B217F700B728B4 /* CloudNegativeTests.swift in Sources */,
+				F506F90529B217F700B728B4 /* SkyShakerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,8 +334,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F506F90F29B217F700B728B4 /* CloudNegativeUITests.swift in Sources */,
-				F506F91129B217F700B728B4 /* CloudNegativeUITestsLaunchTests.swift in Sources */,
+				F506F90F29B217F700B728B4 /* SkyShakerUITests.swift in Sources */,
+				F506F91129B217F700B728B4 /* SkyShakerUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +476,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CloudNegative/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SkyShaker/Preview Content\"";
 				DEVELOPMENT_TEAM = 94M9FJ82WR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -510,7 +510,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CloudNegative/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SkyShaker/Preview Content\"";
 				DEVELOPMENT_TEAM = 94M9FJ82WR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -548,7 +548,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ghp-okjizbZVvJfbYcR9Aff1wuNFG7FC8W44Xc8s.CloudNegativeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "ghp-okjizbZVvJfbYcR9Aff1wuNFG7FC8W44Xc8s.SkyShakerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -568,7 +568,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ghp-okjizbZVvJfbYcR9Aff1wuNFG7FC8W44Xc8s.CloudNegativeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "ghp-okjizbZVvJfbYcR9Aff1wuNFG7FC8W44Xc8s.SkyShakerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -591,7 +591,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CloudNegative;
+				TEST_TARGET_NAME = SkyShaker;
 			};
 			name = Debug;
 		};
@@ -609,7 +609,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CloudNegative;
+				TEST_TARGET_NAME = SkyShaker;
 			};
 			name = Release;
 		};

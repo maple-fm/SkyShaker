@@ -1,6 +1,6 @@
 //
 //  Privacy.swift
-//  CloudNegative
+//  SkyShaker
 //
 //  Created by 出口楓真 on 2023/06/28.
 //

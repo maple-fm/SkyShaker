@@ -13,7 +13,7 @@ struct SplashView: View {
         Image("splash")
             .resizable()
             .scaledToFit()
-            
+
     }
 }
 

@@ -142,28 +142,28 @@
             filePath = "CloudNegative/CloudView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "previews"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "5F1C7F63-DCE5-4FB0-B66C-18A6C5D8C063 - 842c4d97882ad484"
+                  uuid = "5F1C7F63-DCE5-4FB0-B66C-18A6C5D8C063 - d84a0317eda5f01e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static CloudNegative.CloudView_Previews.previews.getter : some"
+                  symbolName = "__C.UIWindow.motionEnded(_: __C.UIEventSubtype, with: Swift.Optional&lt;__C.UIEvent&gt;) -&gt; ()"
                   moduleName = "CloudNegative"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/maple/Desktop/Swiftapp/CloudNegative/CloudNegative/CloudView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "98"
-                  endingLineNumber = "98"
-                  offsetFromSymbolStart = "92">
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "196">
                </Location>
                <Location
-                  uuid = "5F1C7F63-DCE5-4FB0-B66C-18A6C5D8C063 - 842c4d97882ad4a5"
+                  uuid = "5F1C7F63-DCE5-4FB0-B66C-18A6C5D8C063 - 842c4d97882ad63e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -173,8 +173,8 @@
                   urlString = "file:///Users/maple/Desktop/Swiftapp/CloudNegative/CloudNegative/CloudView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
                   offsetFromSymbolStart = "596">
                </Location>
             </Locations>

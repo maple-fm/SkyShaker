@@ -47,7 +47,7 @@ struct CloudView: View {
                     
                     Spacer()
                     
-                    HStack {
+                    HStack(spacing: 0) {
                         ZStack(alignment: .leading) {
                             if textFieldInput.isEmpty {
                                 Text("不満")
@@ -56,7 +56,7 @@ struct CloudView: View {
                             
                             TextField("", text: $textFieldInput)
                                 .foregroundColor(.black)
-
+                            
                             
                         }
                         .padding(.trailing, 35)
@@ -64,11 +64,10 @@ struct CloudView: View {
                         .background(Color(UIColor(named: "inputColor")!))
                         .cornerRadius(10)
                         .padding(30)
-                        .padding(.leading, 20)
-                        .frame(width: 370, height: 50)
-                        .offset(x: 0, y:350)
-                        
 
+                        .frame(width: 370, height: 50)
+                        
+                        
                         Button(action: {
                             viewModel.saveCloud(content: textFieldInput, opacity: 0)
                             textFieldInput = ""
@@ -76,9 +75,14 @@ struct CloudView: View {
                             Image("submit")
                                 .resizable()
                                 .frame(width: 30, height: 30)
+                                .foregroundColor(.red)
+                                
                         }
-                        .offset(x: -80, y: 350)
+                        .offset(x: -80)
+                        
                     }
+                    .offset(y: 350)
+                    .padding(.bottom, 50)
                 }
             }
             .onAppear {

@@ -12,6 +12,7 @@ struct CloudView: View {
     @State private var textFieldInput = ""
     @StateObject private var viewModel = CloudViewModel()
     @State private var cloudOffset: CGFloat = UIScreen.main.bounds.width
+    @State private var ScreenHeight: CGFloat = UIScreen.main.bounds.height
     @State private var cloudOpacity: Double = 0.0
     @State private var isPopupPresented = false
     var backgroundColor: String
@@ -81,7 +82,7 @@ struct CloudView: View {
                         .offset(x: -80)
                         
                     }
-                    .offset(y: 350)
+                    .offset(y: ScreenHeight / 3 + 70)
                     .padding(.bottom, 50)
                 }
             }

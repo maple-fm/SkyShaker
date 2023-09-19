@@ -106,6 +106,7 @@ struct CloudView: View {
         .onTapGesture {
             UIApplication.shared.closeKeyboard()
         }
+        .ignoresSafeArea(.keyboard, edges: .bottom)
 
     }
 }

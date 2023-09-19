@@ -103,6 +103,9 @@ struct CloudView: View {
                 }
             }
         )
+        .onTapGesture {
+            UIApplication.shared.closeKeyboard()
+        }
 
     }
 }
@@ -121,5 +124,11 @@ extension UIWindow {
     open override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         super.motionEnded(motion, with: event)
         NotificationCenter.default.post(name: .deviceDidShakeNotification, object: event)
+    }
+}
+
+extension UIApplication {
+    func closeKeyboard() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }

@@ -14,6 +14,7 @@
 		F506F90529B217F700B728B4 /* SkyShakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F90429B217F700B728B4 /* SkyShakerTests.swift */; };
 		F506F90F29B217F700B728B4 /* SkyShakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F90E29B217F700B728B4 /* SkyShakerUITests.swift */; };
 		F506F91129B217F700B728B4 /* SkyShakerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506F91029B217F700B728B4 /* SkyShakerUITestsLaunchTests.swift */; };
+		F50DF0962ABA86EF0073BC77 /* KeyboardObserving in Frameworks */ = {isa = PBXBuildFile; productRef = F50DF0952ABA86EF0073BC77 /* KeyboardObserving */; };
 		F527B8172A4C78BB006EBE2A /* CloudShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F527B8162A4C78BB006EBE2A /* CloudShape.swift */; };
 		F528349A2A52BE3B005F3DAC /* TutrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52834992A52BE3B005F3DAC /* TutrialView.swift */; };
 		F528349C2A52C5E8005F3DAC /* Tutrial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528349B2A52C5E8005F3DAC /* Tutrial.swift */; };
@@ -77,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50DF0962ABA86EF0073BC77 /* KeyboardObserving in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +192,9 @@
 			dependencies = (
 			);
 			name = SkyShaker;
+			packageProductDependencies = (
+				F50DF0952ABA86EF0073BC77 /* KeyboardObserving */,
+			);
 			productName = CloudNegative;
 			productReference = F506F8F029B217F500B728B4 /* SkyShaker.app */;
 			productType = "com.apple.product-type.application";
@@ -263,6 +268,9 @@
 				ja,
 			);
 			mainGroup = F506F8E729B217F500B728B4;
+			packageReferences = (
+				F50DF0942ABA86EF0073BC77 /* XCRemoteSwiftPackageReference "KeyboardObserving" */,
+			);
 			productRefGroup = F506F8F129B217F500B728B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -672,6 +680,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F50DF0942ABA86EF0073BC77 /* XCRemoteSwiftPackageReference "KeyboardObserving" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nickffox/KeyboardObserving";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F50DF0952ABA86EF0073BC77 /* KeyboardObserving */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F50DF0942ABA86EF0073BC77 /* XCRemoteSwiftPackageReference "KeyboardObserving" */;
+			productName = KeyboardObserving;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F53396E229BCD30B00017FA5 /* Cloud.xcdatamodeld */ = {

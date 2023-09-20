@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "keyboardobserving",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nickffox/KeyboardObserving",
+      "state" : {
+        "branch" : "master",
+        "revision" : "48134b5460435cc9d048223ad7560ee2e40f3d4a"
+      }
+    }
+  ],
+  "version" : 2
+}

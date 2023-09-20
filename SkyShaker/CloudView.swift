@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import KeyboardObserving
 
 struct CloudView: View {
 
@@ -35,8 +36,7 @@ struct CloudView: View {
                     .resizable()
                     .frame(width: 200, height: 200)
             }
-            .offset(x: -100, y:-300)
-
+            .position(x: 100, y:80)
             VStack {
                 ZStack {
                     ForEach(viewModel.clouds, id: \.self) { cloud in
@@ -84,7 +84,8 @@ struct CloudView: View {
                     }
                     .offset(y: ScreenHeight / 3 + 70)
                     .padding(.bottom, 50)
-                }
+                    .keyboardObserving()
+              }
             }
             .onAppear {
                 self.cloudOffset = 200
@@ -106,8 +107,6 @@ struct CloudView: View {
         .onTapGesture {
             UIApplication.shared.closeKeyboard()
         }
-        .ignoresSafeArea(.keyboard, edges: .bottom)
-
     }
 }
 
